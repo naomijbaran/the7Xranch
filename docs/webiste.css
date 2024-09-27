@@ -488,3 +488,23 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+
+/* General styles for images in the slideshow */
+.slideshow-container img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  max-width: 100%; /* Prevents images from stretching beyond their original size */
+  height: auto; /* Maintains the aspect ratio of images */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .slideshow-container img {
+    width: 100%; /* Adjusts the image size to fit smaller screens */
+  }
+
+  .slideshow-container {
+    padding: 0 10px; /* Add some padding for better spacing on smaller devices */
+  }
+}
+
