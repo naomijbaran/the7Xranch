@@ -420,6 +420,17 @@ footer {
     margin-bottom: 20px;
   }
 }
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .service-item {
+    flex-basis: 100%; /* Full width on small screens */
+  }
+}
+@media (max-width: 768px) {
+  .service-item {
+    flex-basis: calc(50% - 40px); /* Two columns on tablets */
+  }
+}
 
 FOOT
 /* Ensure the html and body take up the full height */
