@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The 7X Ranch</title>
+  <link rel="stylesheet" href="webiste.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>The 7X Ranch</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Service_Home_Page.html">Services</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="slideshow.html"><strong>Photo Gallery</strong></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like more information about our services, please fill out the form below or reach us directly via phone or email.</p>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <p><strong>Phone:</strong> +1 (970)-872-3029 for calls only.</p>
+        <p>                        +1 (570)-994-2741 for calls or texts</p>
+        <p><strong>Email:</strong> the7xranchco@gmail.com</p>
+        <p><strong>Address:</strong> 31050 Oak Mesa Road, Hotchkiss, CO </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/myzgqvqj"method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class=".container">
+      <p>&copy; 2024 The 7X Ranch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> <!-- Optional for form submission handling -->
+</body>
+</html>
