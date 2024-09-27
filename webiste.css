@@ -1,0 +1,479 @@
+/* General Styles */
+body {
+  font-family: "Old Standard TT", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #32613b85;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f9f8f2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+/* Services Section */
+#services {
+  padding: 40px 0;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 30%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.service-item h3 {
+  margin-top: 0;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 0;
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: center;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide all slides by default */
+.slide {
+  display: none;
+}
+
+/* Fade effect for slides */
+.fade {
+  animation: slide 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+/* Next and Previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(60, 57, 57);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .prev, .next, .text {font-size: 11px}
+}
+GH STUFF 
+/* General Styles */
+body {
+  font-family: "Old Standard TT", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #32613b85;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f9f8f2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Services Section */
+#service-details {
+  padding: 40px 0;
+}
+
+.service-description {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.service-description h2 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+SERVICES PG 
+/* General Styles */
+body {
+  font-family: "Old Standard TT", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #32613b85;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Services Section */
+#services {
+  padding: 40px 0;
+  background-color: #f9f8f2;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.service-item {
+  width: 30%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.service-item h3 {
+  margin-top: 0;
+}
+
+.service-item a {
+  text-decoration: none;
+  color: #32613b85;
+  font-weight: bold;
+}
+
+.service-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .service-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+FOOT
+/* Ensure the html and body take up the full height */
+html, body {
+  height: 100%; /* Set height to 100% of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+/* Make body a flex container */
+body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Main content container */
+.container {
+  flex: 1; /* Allow it to grow and fill available space */
+  padding: 20px; /* Add padding as needed */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: rgb(15, 63, 23);
+  text-align: center;
+  padding: 20px 0; /* Padding for footer */
+}
+
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #729a74; /* Example background */
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container {
+  flex: 1; /* This will take the available space */
+  padding: 20px; /* Optional padding */
+  overflow: auto; /* Allow scrolling if content overflows */
+}
+
+footer {
+  background-color: #f8f9fa; /* Example background */
+  padding: 10px;
+  text-align: center;
+}
